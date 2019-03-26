@@ -47,5 +47,8 @@ main {
   z-index: 2;
   background-color: #fff;
   min-height: 100vh;
-  /* transform: translate(240px, 0); */
+}
+
+main.open {
+  transform: translate(240px, 0);
 }
