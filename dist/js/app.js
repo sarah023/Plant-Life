@@ -1,9 +1,15 @@
+const toggleTag = document.querySelector('a.toggle-nav');
 const mainTag = document.querySelector('main');
-const toggleTag = document.querySelector('a toggle-nav');
+const navTag = document.querySelector('nav');
 
-// //when toggleTag is clicked - toggle a class of 'open' onto the main tag
-// toggleTag.addEventListener('click', function() {
-//   mainTag.classList.toggle('open');
-// });
+toggleTag.addEventListener('click', () => {
+  mainTag.classList.toggle('open');
+  navTag.classList.toggle('open');
 
-toggleTag.innerHTML('yoyoyoyoyo');
+  //toggle 'open/close'
+  if (mainTag.classList.contains('open')) {
+    toggleTag.innerHTML = `<img src='images/close.svg'>`;
+  } else {
+    toggleTag.innerHTML = `<img src='images/menu.svg'>`;
+  }
+});
