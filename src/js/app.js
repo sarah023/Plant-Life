@@ -5,6 +5,7 @@ const navTag = document.querySelector('nav');
 toggleTag.addEventListener('click', () => {
   mainTag.classList.toggle('open');
   navTag.classList.toggle('open');
+  toggleTag.classList.toggle('open');
 
   //toggle 'open/close'
   if (mainTag.classList.contains('open')) {
